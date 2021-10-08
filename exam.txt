@@ -1,0 +1,65 @@
+mkdir fisat
+cd fisat
+mkdir day1
+exam@debian:~/fisat$ cd day1
+exam@debian:~/fisat/day1$ cat >> f1.txt
+hello is this mredula.
+exam@debian:~/fisat/day1$ cat >> f2.txt
+from fisat college.
+exam@debian:~/fisat/day1$ cat >> f2.txt
+studying mca.
+exam@debian:~/fisat/day1$ cd ..
+xam@debian:~/fisat$ mkdir day2
+exam@debian:~/fisat$ cd day2
+exam@debian:~/fisat/day2$ cat >> m1.txt
+hello.
+exam@debian:~/fisat/day2$ cat >> m2.txt
+hi.
+exam@debian:~/fisat/day2$ cd ..
+exam@debian:~/fisat$ mkdir day3
+exam@debian:~/fisat$ cd day3
+exam@debian:~/fisat/day3$ cat >> c1.txt
+fun.
+exam@debian:~/fisat/day3$ cat >> c2.txt
+play.
+exam@debian:~/fisat/day3$ ls
+c1.txt  c2.txt
+
+1.
+exam@debian:~/fisat/day2$ cat m1.txt >> m3.txt
+exam@debian:~/fisat/day2$ cat m2.txt >> m3.txt
+exam@debian:~/fisat/day2$ ls
+m1.txt  m2.txt  m3.txt
+exam@debian:~/fisat/day2$ cat m3.txt
+hello.
+hi.
+exam@debian:~/fisat/day2$ cd..
+
+2.
+exam@debian:~/fisat$ cp ~/fisat/day2/m3.txt ~/fisat/day3/c3.txt
+
+xam@debian:~/fisat$ cd day3
+exam@debian:~/fisat/day3$ ls
+c1.txt  c2.txt  c3.txt
+exam@debian:~/fisat/day3$ cat c3.txt
+hello.
+hi.
+
+
+3.
+exam@debian:~/fisat/day1$ ls -l f1.txt
+-rw-r--r-- 1 exam exam 4 Oct  8 10:59 f1.txt
+exam@debian:~/fisat/day1$ chmod a+wt f1.txt
+exam@debian:~/fisat/day1$ ls -l f1.txt
+-rw-rw-rwT 1 exam exam 4 Oct  8 10:59 f1.txt
+
+4.
+exam@debian:~/fisat/day1$ ps
+    PID TTY          TIME CMD
+   7898 pts/0    00:00:00 bash
+   8998 pts/0    00:00:00 ps
+   
+5.   
+exam@debian:~/fisat/day1$ pwd
+/home/exam/fisat/day1
+
